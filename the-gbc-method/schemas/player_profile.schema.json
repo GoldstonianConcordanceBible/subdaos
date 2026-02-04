@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PlayerProfile",
+  "type": "object",
+  "required": ["age", "level", "primary_goal", "time_per_week"],
+  "properties": {
+    "age": {"type": "integer", "minimum": 5, "maximum": 30},
+    "level": {"type": "string", "enum": ["youth", "middle_school", "high_school", "college", "adult"]},
+    "positions": {"type": "array", "items": {"type": "string"}},
+    "primary_goal": {"type": "string"},
+    "biggest_struggle": {"type": "string"},
+    "time_per_week": {"type": "integer", "minimum": 30, "maximum": 1000},
+    "access": {
+      "type": "object",
+      "properties": {
+        "cage": {"type": "boolean"},
+        "field": {"type": "boolean"},
+        "gym": {"type": "boolean"}
+      }
+    }
+  }
+}
