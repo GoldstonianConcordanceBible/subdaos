@@ -9,4 +9,3 @@ This repository contains the manuscript and supporting materials for:
 
 ## How to cite
 After a Zenodo DOI is minted, use the DOI shown in the GitHub release and the Zenodo record.
-A recommended citation will appea
